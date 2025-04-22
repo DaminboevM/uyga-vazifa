@@ -125,6 +125,7 @@ const DELETE=(req,res)=>{
         let {d}=req.params
     
         let studentt = students.findIndex(s => s.id===parseInt(id))
+        console.log("Ozodbek")
         
         if (studentt === -1){
             throw Error("talaba yoq bazada")
