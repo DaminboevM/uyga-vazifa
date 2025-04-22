@@ -15,7 +15,7 @@ router.post("/api/students", Students.GET_ID)
 
 
 
-router.put("/api/students/:id", Students.PUT)
+router.put("/api/students", Students.PUT)
 
 
 
