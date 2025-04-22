@@ -2,7 +2,7 @@ import fs from "fs"
 import path from "path"
 
 
-// bu yerda students da databasadega hamma malumotlar bor !?
+// bu yerda students da databasadega hamma malumotlar bor !
 
 const students = JSON.parse(
     fs.readFileSync(path.join(process.cwd(), "database/users.json"), "utf-8")
@@ -72,7 +72,6 @@ const POST = (req, res) => {
 const PUT = (req, res) => {
     try {
         const {id, firstName, lastName, course, faculty} = req.body
-        console.log("salom");
         
         if(!id) throw Error("Invalid id")
         
@@ -119,13 +118,12 @@ const PUT = (req, res) => {
 
 
 
-//Ozodbek
+// Ozodbek
 const DELETE=(req,res)=>{
     try {
         let {d}=req.params
     
         let studentt = students.findIndex(s => s.id===parseInt(id))
-        console.log("Ozodbek")
         
         if (studentt === -1){
             throw Error("talaba yoq bazada")
