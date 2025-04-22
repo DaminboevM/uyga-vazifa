@@ -32,7 +32,39 @@ const GET_ID = (req, res) => {
 
 
 // Abdulloh
-const POST = (req, res) => {}
+const POST = (req, res) => {
+    const { firstName, lastName, course, faculty } = req.body;
+
+    let baza = students
+
+    if (!firstName || !lastName || !course || !faculty) {
+        return res.status(400).send("Barcha maydonlar to'ldirilishi kerak");
+    }
+
+    const userExists = students.find(user =>
+        user.firstName === firstName && user.lastName === lastName
+    );
+
+    if (userExists) {
+        return res.status(400).send("Bu foydalanuvchi allaqachon mavjud");
+    }
+
+    const newUser = {
+        id: Date.now(),
+        firstName,
+        lastName,
+        course,
+        faculty
+    };
+
+    baza.push(newUser);
+
+    baza.push(newUser);
+    fs.writeFileSync(path.join(process.cwd(), "database/users.json"), JSON.stringify(baza, null, 4))
+        
+    res.status(201).send("Foydalanuvchi muvaffaqiyatli royxatdan otdi");
+
+}
 
 
 
