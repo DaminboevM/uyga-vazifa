@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "firstName": "Javlon",
+        "lastName": "Bekmurodov",
+        "course": 1,
+        "faculty": "Dasturiy injiniring"
+    },
+    {
+        "id": 2,
+        "firstName": "Dilnoza",
+        "lastName": "Usmonova",
+        "course": 2,
+        "faculty": "Axborot xavfsizligi"
+    },
+    {
+        "id": 3,
+        "firstName": "Shahzod",
+        "lastName": "Toxtayev",
+        "course": 3,
+        "faculty": "Kompyuter injiniringi"
+    },
+    {
+        "id": 4,
+        "firstName": "Malika",
+        "lastName": "Ergasheva",
+        "course": 4,
+        "faculty": "Dasturiy injiniring"
+    },
+    {
+        "id": 5,
+        "firstName": "Sardor",
+        "lastName": "Mahmudov",
+        "course": 1,
+        "faculty": "Axborot texnologiyalari"
+    },
+    {
+        "id": 6,
+        "firstName": "Madina",
+        "lastName": "Toshpolatova",
+        "course": 2,
+        "faculty": "Kompyuter injiniringi"
+    },
+    {
+        "id": 7,
+        "firstName": "Azizbek",
+        "lastName": "Gulomov",
+        "course": 3,
+        "faculty": "Dasturiy injiniring"
+    },
+    {
+        "id": 8,
+        "firstName": "Gulbahor",
+        "lastName": "Islomova",
+        "course": 4,
+        "faculty": "Axborot xavfsizligi"
+    },
+    {
+        "id": 9,
+        "firstName": "Oybek",
+        "lastName": "Raxmatov",
+        "course": 1,
+        "faculty": "Kompyuter injiniringi"
+    },
+    {
+        "id": 10,
+        "firstName": "Lola",
+        "lastName": "Yoldosheva",
+        "course": 2,
+        "faculty": "Axborot texnologiyalari"
+    },
+    {
+        "id": 11,
+        "firstName": "Shamsiddin",
+        "lastName": "Nazarov",
+        "course": 3,
+        "faculty": "Dasturiy injiniring"
+    },
+    {
+        "id": 12,
+        "firstName": "Mohira",
+        "lastName": "Qodirova",
+        "course": 4,
+        "faculty": "Axborot xavfsizligi"
+    },
+    {
+        "id": 13,
+        "firstName": "Bekzod",
+        "lastName": "Rasulov",
+        "course": 1,
+        "faculty": "Kompyuter injiniringi"
+    },
+    {
+        "id": 14,
+        "firstName": "Dilshoda",
+        "lastName": "Shamsiyeva",
+        "course": 2,
+        "faculty": "Axborot texnologiyalari"
+    },
+    {
+        "id": 15,
+        "firstName": "Ibrohim",
+        "lastName": "Sattorov",
+        "course": 3,
+        "faculty": "Dasturiy injiniring"
+    },
+    {
+        "id": 16,
+        "firstName": "Shahlo",
+        "lastName": "Yoqubova",
+        "course": 4,
+        "faculty": "Axborot xavfsizligi"
+    },
+    {
+        "id": 17,
+        "firstName": "Zafar",
+        "lastName": "Jorayev",
+        "course": 1,
+        "faculty": "Axborot texnologiyalari"
+    },
+    {
+        "id": 18,
+        "firstName": "Rayhona",
+        "lastName": "Salimova",
+        "course": 2,
+        "faculty": "Kompyuter injiniringi"
+    },
+    {
+        "id": 19,
+        "firstName": "Jamshid",
+        "lastName": "Hamroyev",
+        "course": 3,
+        "faculty": "Axborot xavfsizligi"
+    },
+    {
+        "id": 20,
+        "firstName": "Nozima",
+        "lastName": "Bahromova",
+        "course": 4,
+        "faculty": "Dasturiy injiniring"
+    }
+]
