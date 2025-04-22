@@ -37,51 +37,7 @@ const POST = (req, res) => {}
 
 
 // Muhammadrizo
-const PUT = (req, res) => {
-    try {
-        const {id, firstName, lastName, course, faculty} = req.body
-
-        if(!id) throw Error("Invalid id")
-        
-        if(firstName && !isNaN(+firstName)) throw Error("Invalid firstName")
-        
-        if(lastName && !isNaN(+lastName)) throw Error("Invalid lastname")
-        
-        if(course && (course < 1 || course > 4)) throw Error("Invalid course")
-
-        let n = 0
-        
-        const newS = students.map(student => {
-            if(student.id == id){
-                n = 1
-                return {
-                    ...student,
-                    firstName : firstName || student.firstName,
-                    lastName : lastName || student.lastName,
-                    course : course || student.course,
-                    faculty : faculty || student.faculty
-                }
-            }
-            return student
-        })
-
-        if(!n) throw Error("Student not found")
-
-        fs.writeFileSync(path.join(process.cwd(), "database/users.json"), JSON.stringify(newS, null, 4))
-
-        res.status(200).send({
-            status : 200,
-            message : "student update"
-        })
-        
-        
-    } catch (error) {
-        res.status(404).send({
-            status: 404,
-            message: error.message
-        })
-    }
-}
+const PUT = (req, res) => {}
 
 
 
