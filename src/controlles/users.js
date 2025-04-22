@@ -2,7 +2,7 @@ import fs from "fs"
 import path from "path"
 
 
-// bu yerda students da databasadage hamma malumotlar bor !?
+// bu yerda students da databasadega hamma malumotlar bor !?
 const students = JSON.parse(fs.readFileSync(path.join(process.cwd(), "database/users.json")), "utf-8")
 
 
