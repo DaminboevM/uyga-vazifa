@@ -119,8 +119,28 @@ const PUT = (req, res) => {
 
 
 
-// Ozodek
-const DELETE = (req, res) => {}
+//Ozodbek
+const DELETE=(req,res)=>{
+    try {
+        let {d}=req.params
+    
+        let studentt = students.findIndex(s => s.id===parseInt(id))
+        
+        if (studentt === -1){
+            throw Error("talaba yoq bazada")
+        }
+        students.splice(studentt,1)
+        fs.writeFileSync(path.join(process.cwd(), 'database/users.json'),JSON.stringify(students,null,4))
+
+        res.status(200).json({status: 200, message: "talaba ochirildi"})
+
+    }catch(error){
+        res.status(404).json({
+            status: 404,
+            message: error.message
+        })
+    }
+}
 
 
 export default {
