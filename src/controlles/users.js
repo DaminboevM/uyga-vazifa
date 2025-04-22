@@ -2,7 +2,7 @@ import fs from "fs"
 import path from "path"
 
 
-// bu yerda students da databasadega hamma malumotlar bor !?
+// bu yerda students da databasadage hamma malumotlar bor !?
 const students = JSON.parse(fs.readFileSync(path.join(process.cwd(), "database/users.json")), "utf-8")
 
 
@@ -11,22 +11,12 @@ const students = JSON.parse(fs.readFileSync(path.join(process.cwd(), "database/u
 // Abrorbek akani github da muammo bolgani uchun kodni yozib menga telegramdan tashlab berdilar men qoship qoydim 
 
 // Abrorbe 
-const GET = (req, res) => {
-    res.status(200).json(students);
-}
+const GET = (req, res) => {}
 
 
 
 // Aborbek
-const GET_ID = (req, res) => {
-    const { id } = req.params;
-    const student = students.find(s => s.id === parseInt(id)); 
-    if (student) {
-        res.status(200).json(student);
-    } else {
-        res.status(404).json({ msg: "Talaba topilmadi" }); 
-    }
-}
+const GET_ID = (req, res) => {}
 
 
 
