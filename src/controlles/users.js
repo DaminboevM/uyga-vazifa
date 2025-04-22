@@ -30,7 +30,8 @@ const POST = (req, res) => {}
 const PUT = (req, res) => {
     try {
         const {id, firstName, lastName, course, faculty} = req.body
-
+        console.log("salom");
+        
         if(!id) throw Error("Invalid id")
         
         if(firstName && !isNaN(+firstName)) throw Error("Invalid firstName")
