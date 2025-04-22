@@ -3,15 +3,10 @@ import path from "path"
 
 
 // bu yerda students da databasadega hamma malumotlar bor !?
-
 const students = JSON.parse(
     fs.readFileSync(path.join(process.cwd(), "database/users.json"), "utf-8")
 );
 
-
-
-
-// Abrorbek akani github da muammo bolgani uchun kodni yozib menga telegramdan tashlab berdilar men qoship qoydim 
 
 // Abrorbe 
 const GET = (req, res) => {
